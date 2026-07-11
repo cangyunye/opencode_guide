@@ -51,12 +51,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - run: pip install mkdocs-material pymdown-extensions
       - run: mkdocs build
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: site
       - uses: actions/deploy-pages@v4
