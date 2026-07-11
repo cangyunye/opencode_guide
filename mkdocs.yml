@@ -1,0 +1,59 @@
+site_name: OpenCode 入门指南
+site_description: 面向初学者的 OpenCode AI 编码助手中文教程
+site_author: OpenCode Community
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - toc.integrate
+  palette:
+    primary: indigo
+    accent: indigo
+
+nav:
+  - 首页: index.md
+
+  - 基础篇:
+    - OpenCode 是什么: 01-what-is-opencode.md
+    - 安装与基本配置: 02-install-and-setup.md
+    - 第一次启动: 03-first-run.md
+    - 基础使用场景: 04-basic-usage.md
+    - 权限与安全: 05-permissions.md
+    - 权限系统详解: 05a-permissions-advanced.md
+    - 会话管理与常用命令: 06-sessions-and-commands.md
+
+  - 进阶篇:
+    - 模型选择与成本控制: 07-model-selection.md
+    - 计划模式与构建模式: 08-plan-vs-build.md
+    - 技能系统入门: 09-skills-intro.md
+    - 为什么技能决定了 AI 能走多远: 09a-why-skills-matter.md
+    - 如何看懂技能: 10-reading-skills.md
+    - 精简与修改技能: 11-skill-management.md
+    - 核心技能详解: 12-key-skills.md
+    - 技能使用顺序: 13-skill-workflow.md
+    - 长时间操作: 14-long-tasks.md
+    - 多维度开发: 15-multi-dimensional-dev.md
+    - 桌面版操作指南: 16-desktop-guide.md
+    - 持久规则与会话高级管理: 17-persistent-rules.md
+    - 外部工具集成与 MCP 扩展: 18-external-tools-and-mcp.md
+    - 自定义技能设计实战: 19-custom-skills-design.md
+    - 实用技巧与常见问题: 20-tips-and-tricks.md
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - tables
+  - toc:
+      separator: "-"
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
