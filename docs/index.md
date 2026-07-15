@@ -52,3 +52,7 @@
 18. [外部工具集成与 MCP 扩展](18-external-tools-and-mcp.md)
 19. [自定义技能设计实战](19-custom-skills-design.md)
 20. [实用技巧与常见问题](20-tips-and-tricks.md)
+
+### 附录篇
+
+21. [快捷键速查](21-keyboard-shortcuts.md)

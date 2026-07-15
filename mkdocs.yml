@@ -44,6 +44,9 @@ nav:
     - 自定义技能设计实战: 19-custom-skills-design.md
     - 实用技巧与常见问题: 20-tips-and-tricks.md
 
+  - 附录篇:
+    - 快捷键速查: 21-keyboard-shortcuts.md
+
 markdown_extensions:
   - admonition
   - codehilite:
